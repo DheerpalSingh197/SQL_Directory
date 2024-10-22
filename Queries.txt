@@ -1,0 +1,27 @@
+// update
+
+ UPDATE employee_table SET name = 'New Name', position = 'Senior Developer',salary = 65000,joining_date = '2023-06-01',email = 'new.email@example.com',phone = '999-999-9999',address = '456 C-Block, Gurgaon, Haryana',tasks_completed = 60,department_id = 5 WHERE id = 102;
+
+
+
+
+
+// insert
+
+ INSERT INTO employee_table (id, name, position, salary, joining_date, email, phone, address, tasks_completed, department_id) VALUES (50, 'Dheerpal Singh', 'Developer', 60000, '2023-05-10', 'dheerpal.singh@example.com', '987-343-3434', '123 B-Block , Gurgaon, Haryana', 50, 4);
+
+
+
+
+// delete
+DELETE FROM employee_table WHERE id = 101;
+
+
+
+// join query
+
+
+SELECT e.id, e.name, d.department_name
+FROM employee_table e
+JOIN department_table d ON e.department_id = d.department_id;
+
